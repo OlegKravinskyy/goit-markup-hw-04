@@ -8,6 +8,7 @@
   --btn-hover-color: #188ce8;
   --address-text-color: rgba(255, 255, 255, 0.6);
   --section-team-color: #f5f4fa;
+  --color-icon: #afb1b8;
 }
 
 a {
@@ -265,13 +266,24 @@ ol {
 .team-soc-link {
   width: 44px;
   height: 44px;
-  background-color: yellow;
   border-radius: 50%;
   display: block;
 }
 
 .team-soc-item + .team-soc-item {
   margin-left: 10px;
+}
+
+.team-soc-icon {
+  fill: var(--color-icon);
+}
+
+.team-soc-link:hover {
+  background-color: var(--logo-color-left);
+}
+
+.team-soc-link:hover .team-soc-icon {
+  fill: var(--logo-color-two);
 }
 
 .section-btn {
@@ -344,7 +356,6 @@ ol {
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
-  padding-bottom: 0;
   color: var(--secondary-color);
 }
 
@@ -401,7 +412,6 @@ ol {
 }
 
 .selection-btn {
-  margin-top: 94px;
   margin-bottom: 50px;
 }
 
@@ -414,10 +424,6 @@ ol {
 
 .portfolio-item {
   display: flex;
-}
-
-.flex-container {
-  margin-bottom: 94px;
 }
 
 .flex-element {
@@ -449,6 +455,10 @@ ol {
   display: flex;
   justify-content: center;
   list-style-type: none;
+}
+
+.btn-size:not(:last-child) {
+  margin-right: 8px;
 }
 
 .btn-size :not(:last-child) {
