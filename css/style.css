@@ -527,3 +527,20 @@ ol {
   padding-bottom: 60px;
   background: var(--secondary-color);
 }
+
+.footer .container {
+  display: flex;
+}
+
+.footer-social {
+  margin-left: 70px;
+}
+.footer-social-join {
+  margin-bottom: 20px;
+}
+
+.team-soc-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
