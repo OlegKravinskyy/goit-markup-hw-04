@@ -78,6 +78,10 @@ ol {
   margin-right: 50px;
 }
 
+.header-link-pages:hover {
+  color: var(--logo-color-left);
+}
+
 .header-connect {
   margin-left: auto;
 }
@@ -105,8 +109,21 @@ ol {
   color: var(--secondary-color);
 }
 
+.header-item {
+  display: inline-flex;
+  align-items: center;
+}
+
 .header-link:hover {
   color: var(--logo-color-left);
+}
+
+.header-link:hover .header-icon {
+  fill: var(--logo-color-left);
+}
+
+.header-icon {
+  margin-right: 10px;
 }
 
 .hidden-title {
