@@ -174,8 +174,20 @@ ol {
 }
 
 .section-list {
+  width: calc(100% / 4 - 30px);
   display: flex;
   justify-content: space-between;
+}
+
+.section-pictures {
+  width: 270px;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+  background-color: var(--section-team-color);
+  border-radius: 4px;
 }
 
 .section-item:not(:last-child) {
@@ -230,10 +242,6 @@ ol {
   margin-right: 0;
   justify-content: space-between;
   color: var(--main-color);
-}
-
-.section-item {
-  min-width: 270px;
 }
 
 .section-item :not(:last-child) {
@@ -362,7 +370,7 @@ ol {
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
   padding: 0;
   color: var(--secondary-color);
 }
@@ -414,6 +422,33 @@ ol {
   padding-bottom: 30px;
 }
 
+/* -----------------------------Section clients------------------------ */
+
+.clients-list {
+  display: flex;
+}
+
+.clients-item {
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  box-sizing: border-box;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  fill: var(--color-icon);
+  cursor: pointer;
+}
+
+.clients-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.clients-item:hover {
+  border-color: var(--logo-color-left);
+  fill: var(--logo-color-left);
+}
 .adress-text {
   font-style: normal;
   line-height: 1.71;
