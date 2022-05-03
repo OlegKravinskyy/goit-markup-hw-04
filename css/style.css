@@ -186,6 +186,7 @@ ol {
   justify-content: center;
   align-items: center;
   margin-bottom: 30px;
+  margin-right: 0;
   background-color: var(--section-team-color);
   border-radius: 4px;
 }
