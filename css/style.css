@@ -97,8 +97,9 @@ ol {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  display: block;
   padding: 32px 0;
+  display: flex;
+  align-items: center;
   color: var(--main-color);
 }
 
@@ -179,6 +180,10 @@ ol {
   justify-content: space-between;
 }
 
+.section-item:not(:last-child) {
+  margin-right: 30px;
+}
+
 .section-pictures {
   width: 270px;
   height: 120px;
@@ -186,13 +191,8 @@ ol {
   justify-content: center;
   align-items: center;
   margin-bottom: 30px;
-  margin-right: 0;
   background-color: var(--section-team-color);
   border-radius: 4px;
-}
-
-.section-item:not(:last-child) {
-  margin-right: 30px;
 }
 
 .section-main {
@@ -245,9 +245,9 @@ ol {
   color: var(--main-color);
 }
 
-.section-item :not(:last-child) {
+/* .section-item :not(:last-child) {
   margin-right: 30px;
-}
+} */
 
 .section-three-list {
   display: flex;
